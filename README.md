@@ -32,10 +32,10 @@ ausgeführt.
 * Windows: https://www.erlang.org/downloads
 * Linux: *$ sudo apt install erlang-base*
 
-*$ erl* startet die erlang-Konsole<br/>
+*$ cd erlang && erl* startet die erlang-Konsole im richtigen Verzeichnis<br/>
 Das */erlang* Beispiel kann dann mit <br/>
 *> c(twoProc).* <br/>
 gebaut und mit <br/>
-*twoProc:start(\<value\>).* <br/>
+*> twoProc:start(\<value\>).* <br/>
 ausgeführt werden.
 
