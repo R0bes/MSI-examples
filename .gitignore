@@ -1,0 +1,14 @@
+/cilk/obj/
+/cilk/outdir/
+/cilk/.cproject
+/cilk/.project
+/cilk/.settings/
+
+/kotlin/out/
+/kotlin/.idea
+/kotlin/kotlin.iml
+
+/erlang/*.beam
+/erlang/ebin/
+/erlang/.project
+/erlang/.settings/
