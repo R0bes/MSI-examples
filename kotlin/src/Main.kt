@@ -64,19 +64,10 @@ fun testStack(
     val prodCounter = AtomicInteger(producers)
 
     for (i in 0 until producers)
-        callableList.add(
-            Producer(
-                stack,
-                prodCounter,
-                operations / producers
-            ))
+        callableList.add (Producer(stack, prodCounter, operations / producers))
 
     for (i in 0 until consumers)
-        callableList.add(
-            Consumer(
-                stack,
-                prodCounter
-            ))
+        callableList.add (Consumer(stack, prodCounter))
 
     val executor = Executors.newFixedThreadPool(threads)
 

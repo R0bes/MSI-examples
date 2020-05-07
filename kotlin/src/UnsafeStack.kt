@@ -1,17 +1,13 @@
 
 class UnsafeStack<T> : Stack<T> {
-
     class Node<T>(val ele : T) {
         var next : Node<T>? = null
     }
-
     private var head : Node<T>? = null
 
     override fun push(ele: T) {
         val newHead = Node(ele)
-        if (head != null) {
-            newHead.next = head
-        }
+        if (head != null) newHead.next = head
         head = newHead
     }
 
@@ -23,13 +19,6 @@ class UnsafeStack<T> : Stack<T> {
         return oldHead?.ele
     }
 }
-
-
-
-
-
-
-
 
 
 
